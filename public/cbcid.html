@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CBCID </title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+
+
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.colVis.min.js"></script>
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+  <link href="assets/img/cbcid/download__1_-removebg-preview.png" rel="icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/slide.css" rel="stylesheet">
+
+  <style>
+    @page {
+      size: auto;
+    }
+
+    body {
+      font-family: Arial;
+      background-image: url('https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg');
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: coral;
+      text-align: center;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .border {
+      border-radius: 10px;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /*.tablinks{
+  margin-left:200px;
+}*/
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heading" style="text-align: center;">
+    <!--<div class="row">
+<div class="col-sm-5">
+  <img src="assets/img/cbcid/download__1_-removebg-preview.png" width="300" height="300" class="img-fluid" alt="logo">
+</div>
+<div class="col-sm-7" style="margin-top: 100px;">
+  <h1>SECURITY BRANCH</h1>
+  <h1>CID</h1>
+</div>
+</div>
+</div>-->
+    <img src="assets/img/cbcid/download__1_-removebg-preview.png" width="200" height="200" class="img-fluid" alt="logo">
+    <h1>SECURITY BRANCH</h1>
+    <h1>CID</h1>
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'home')">HOME</button>
+        <button class="tablinks" onclick="openCity(event, 'vip')">VIP SECURITY</button>
+        <button class="tablinks" onclick="openCity(event, 'noc')">NOC</button>
+        <button class="tablinks" onclick="openCity(event, 'queries')">QUERIES</button>
+        <a href="index.html"><button class="tablinks">LOGOUT</button></a>
+
+      </div>
+      <!--<div class="homee" >
+  <h2>Today's Updates</h2>
+  <marquee width="100%" direction="up" height="70%" style="border:blue solid 3px;padding-top: 10px;text-align: center;margin-top: 40px;">
+    This is sample scrolling text.</br>
+    This is sample scrolling text.</br>
+    This is sample scrolling text.</br>
+    This is sample scrolling text.</br>
+    This is sample scrolling text.</br>
+    This is sample scrolling text.</br>
+
+</marquee>
+</div>-->
+        <div id="home" class="tabcontent" style="display: block;">
+        <div class="border">
+          <h3>Security Branch </h3>
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="assets/img/cbcid/sureshkumar.jpg" style="padding-bottom: 10px;" width="200px"
+                height="200px"></br>
+              <!--<img src="assets/img/cbcid/sureshkumar.jpg" width="100px" height="100px" alt="testimonial">-->
+              
+			<div class="names" style="font-size:15px">
+              <h2 style="font-size:20px">T.Suresh Kumar</h2>
+              <h3 style="font-size:20px">SUPERINTENDENT OF POLICE</h3>
+              <h3 style="font-size:20px">SECURITY BRANCH CID</h3>
+			</div>
+            </div>
+            <div class="col-sm-6">
+			<p style="border-style: double;width:390px;margin-left:70px;">Testimonial Appears Here!!</p>
+			<h2 style="font-size:20px">Today's Updates</h2>
+              <marquee width="70%" direction="up" height="50%"
+                style="border:blue solid 3px;padding-top: 10px;text-align: center;">
+                This is sample scrolling text.</br>
+                This is sample scrolling text.</br>
+                This is sample scrolling text.</br>
+                This is sample scrolling text.</br>
+                This is sample scrolling text.</br>
+                This is sample scrolling text.</br>
+
+              </marquee>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="vip" class="tabcontent">
+        <!--<div class="tab" >-->
+        <div style="margin-top: 20px;align-items: start;">
+          <button class="btn btn-secondary" onclick="openCity(event, 'scale_data')">SECURITY DATA</button>
+          <button class="btn btn-primary" onclick="openCity(event, 'scale')">SCALE OF SECURITY</button>
+          <button class="btn btn-success" onclick="openCity(event, 'vip_m')">VIP MOVEMENT</button>
+          <button class="btn btn-danger" onclick="openCity(event, 'cof')">CODE OF PROVISIONS</button>
+        </div>
+
+      </div>
+      <div id="scale_data" class="tabcontent">
+        <h3 style="padding-bottom: 30px;">Scale of Security Add Entry</h3>
+        <form action="" method="POST" id="officerform">
+          <div class="row" style="margin-left: 50px;">
+            <div class="col-sm-6" style="text-align: left;">
+
+              <label for="name">Name of the Person:</label><br>
+              <input type="text" id="s_name" name="fname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="des">Designation:</label><br>
+              <input type="text" id="s_des" name="lname" pattern="[A-Za-z]+" style="margin-left: 20px;"
+                required><br><br>
+
+
+            </div>
+            <div class="col-sm-6" style="text-align:left">
+              <label for="scale">Scale of Security:</label><br>
+              <div class="col-sm-4">
+                <label for="cars">SCALE:</label>
+                <select id="s_scale">
+                  <option value="Z+">Z+</option>
+                  <option value="Z">Z</option>
+                  <option value="Y+">Y+</option>
+                  <option value="Y">Y</option>
+                  <option value="X">X</option>
+                  <option value="NO SCALE">NO SCALE</option>
+                </select>
+                <br><br>
+              </div>
+            </div>
+          </div>
+          <input class="btn btn-success" type="submit" value="Submit" data-toggle="modal">
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <p>The form has been submitted Successfully</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <script>
+          document.getElementById('officerform').addEventListener('submit', formofficerSubmit);
+
+          function formofficerSubmit(e) {
+            e.preventDefault();
+            let name = document.querySelector('#s_name').value.toUpperCase();
+            let des = document.querySelector('#s_des').value.toUpperCase();
+            let scale = document.querySelector('#s_scale').value.toUpperCase();
+            database.ref('scaleofsecurity').push({ name: name, des: des, scale: scale }).then(qw => {
+              $('#myModal').modal('show');
+              document.getElementById('officerform').reset();
+            });
+          }
+        </script>
+      </div>
+      <div id="scale" class="tabcontent">
+        <h3>Scale</h3>
+        <div class="row">
+
+
+          <div class="col-sm-12">
+            <label for="cars">SCALE:</label>
+            <select id="qs_scale">
+              <option value="Z+">Z+</option>
+              <option value="Z">Z</option>
+              <option value="Y+">Y+</option>
+              <option value="Y">Y</option>
+              <option value="X">X</option>
+              <option value="NO SCALE">NO SCALE</option>
+            </select>
+            <br><br>
+            <button class="btn btn-success" id="protocteedata">Submit</button>
+            <button class="btn btn-info" id="allprintproctocee">All Data</button>
+          </div>
+          <div style="margin-top: 30px;"></div>
+
+          <script>
+            document.getElementById("protocteedata").addEventListener('click', retrieve);
+            document.getElementById("allprintproctocee").addEventListener('click', retrieveall);
+            function retrieve() {
+              try {
+                var removeTab = document.getElementById('scaleresult');
+                var parentEl = removeTab.parentElement;
+                parentEl.innerHTML = "";
+              } catch (err) {
+
+              }
+              let value = document.getElementById("qs_scale").value;
+              //
+              var fragment = document.getElementById("scale");
+              var animalsArray = ["Name of Vip", "Designation", "Scale"];
+              var table = document.createElement("table");
+              table.id = "scaleresult";
+              table.style.marginTop = "50px";
+              var thead = document.createElement("thead");
+              var tr = document.createElement("tr");
+              for (var i = 0; i < animalsArray.length; i++) {
+
+                var td = document.createElement("th");
+                td.style.border = "1px solid black";
+                td.textContent = animalsArray[i];
+
+                tr.appendChild(td);
+
+              }
+              thead.appendChild(tr);
+              table.appendChild(thead);
+              fragment.appendChild(table);
+              document.body.appendChild(fragment);
+              database.ref('scaleofsecurity').orderByChild('scale').equalTo(value).once('value')
+                .then(function (dataSnapshot) {
+                  var tbody = document.createElement("tbody");
+                  console.log("sguv");
+                  dataSnapshot.forEach(function (child) {
+                    tr = document.createElement("tr");
+                    var value = child.val();
+                    var td = document.createElement("td");
+                    td.textContent = value.name;
+                    td.style.border = "1px solid black";
+                    tr.append(td);
+                    td = document.createElement("td");
+                    td.style.border = "1px solid black";
+                    td.textContent = value.des;
+                    tr.append(td);
+                    td = document.createElement("td");
+                    td.style.border = "1px solid black";
+                    td.textContent = value.scale;
+                    tr.append(td);
+                    td = document.createElement("button");
+                    td.style.border = "1px solid black";
+                    td.textContent = "Delete";
+                    td.addEventListener("click", function () {
+                      database.ref('scaleofsecurity').child(child.key).remove();
+                      retrieve();
+                    });
+                    tr.append(td);
+                    tbody.appendChild(tr);
+                  });
+                  table.style.border = "1px solid black";
+                  table.appendChild(tbody);
+                  $(document).ready(function () {
+                    // Setup - add a text input to each footer cell
+                    $('#scaleresult thead th').each(function () {
+                      var title = $('#scaleresult thead th').eq($(this).index()).text();
+                      $(this).append('<input type=text placeholder=' + title + ' >');
+                    });
+
+                    // DataTable
+                    var table = $('#scaleresult').DataTable({
+                      dom: 'Bfrtip',
+                      buttons: [
+                        {
+                          extend: 'print',
+                          text: 'Print selected',
+                          exportOptions: {
+                            columns: ':visible'
+                          }
+                        },
+                        'colvis'
+                      ],
+                      columnDefs: [{
+                        targets: -1,
+                        visible: false
+                      }],
+                      select: true
+                    });
+
+                    // Apply the search
+                    table.columns().eq(0).each(function (colIdx) {
+                      $('input', table.column(colIdx).header()).on('keyup change', function () {
+                        table
+                          .column(colIdx)
+                          .search(this.value)
+                          .draw();
+                      });
+                    });
+                  });
+
+                });
+              //
+            }
+            function retrieveall() {
+              try {
+                var removeTab = document.getElementById('scaleresult');
+                var parentEl = removeTab.parentElement;
+                parentEl.innerHTML = "";
+              } catch (err) {
+
+              }
+              let value = document.getElementById("qs_scale").value;
+              //
+              var fragment = document.getElementById("scale");
+              var animalsArray = ["Name of Vip", "Designation", "Scale"];
+              var table = document.createElement("table");
+              table.id = "scaleresult";
+              table.style.marginTop = "50px";
+              var thead = document.createElement("thead");
+              var tr = document.createElement("tr");
+              for (var i = 0; i < animalsArray.length; i++) {
+
+                var td = document.createElement("th");
+                td.style.border = "1px solid black";
+                td.textContent = animalsArray[i];
+
+                tr.appendChild(td);
+
+              }
+              thead.appendChild(tr);
+              table.appendChild(thead);
+              fragment.appendChild(table);
+              document.body.appendChild(fragment);
+              database.ref('scaleofsecurity').orderByChild('scale').once('value')
+                .then(function (dataSnapshot) {
+                  var tbody = document.createElement("tbody");
+                  console.log("sguv");
+                  dataSnapshot.forEach(function (child) {
+                    tr = document.createElement("tr");
+                    var value = child.val();
+                    var td = document.createElement("td");
+                    td.textContent = value.name;
+                    td.style.border = "1px solid black";
+                    tr.append(td);
+                    td = document.createElement("td");
+                    td.style.border = "1px solid black";
+                    td.textContent = value.des;
+                    tr.append(td);
+                    td = document.createElement("td");
+                    td.style.border = "1px solid black";
+                    td.textContent = value.scale;
+                    tr.append(td);
+                    td = document.createElement("button");
+                    td.style.border = "1px solid black";
+                    td.textContent = "Delete";
+                    td.addEventListener("click", function () {
+                      database.ref('scaleofsecurity').child(child.key).remove();
+                      retrieve();
+                    });
+                    tr.append(td);
+                    tbody.appendChild(tr);
+                  });
+                  table.style.border = "1px solid black";
+                  table.appendChild(tbody);
+                  $(document).ready(function () {
+                    // Setup - add a text input to each footer cell
+                    $('#scaleresult thead th').each(function () {
+                      var title = $('#scaleresult thead th').eq($(this).index()).text();
+                      $(this).append('<input type=text placeholder=' + title + ' >');
+                    });
+
+                    // DataTable
+                    var table = $('#scaleresult').DataTable({
+                      dom: 'Bfrtip',
+                      buttons: [
+                        {
+                          extend: 'print',
+                          text: 'Print selected',
+                          exportOptions: {
+                            columns: ':visible'
+                          }
+                        },
+                        'colvis'
+                      ],
+                      columnDefs: [{
+                        targets: -1,
+                        visible: false
+                      }],
+                      select: true
+                    });
+
+                    // Apply the search
+                    table.columns().eq(0).each(function (colIdx) {
+                      $('input', table.column(colIdx).header()).on('keyup change', function () {
+                        table
+                          .column(colIdx)
+                          .search(this.value)
+                          .draw();
+                      });
+                    });
+                  });
+
+                });
+              //
+            }
+          </script>
+
+        </div>
+      </div>
+      <div id="vip_m" class="tabcontent">
+        <h3 style="padding-bottom: 30px;">VIP MOVEMENT</h3>
+        <form action="" method="POST" id="uploadform">
+          <div class="row" style="margin-left: 60px;">
+            <div class="col-sm-6" style="text-align: left;">
+
+              <label for="name">Name of the VIP :</label><br>
+              <input type="text" id="name" name="fname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="des">Designation:</label><br>
+              <input type="text" id="des" name="lname" pattern="[A-Za-z]+" style="margin-left: 20px;" required><br><br>
+              <label for="scale">Scale of Security:</label><br>
+              <select id="scale7" style="margin-left: 20px;">
+                <option value="Z+">Z+</option>
+                <option value="Z">Z</option>
+                <option value="Y+">Y+</option>
+                <option value="Y">Y</option>
+                <option value="X">X</option>
+                <option value="NO SCALE">NO SCALE</option>
+              </select><br><br>
+              <label for="date">Date of Visit:</label><br>
+              <input type="date" id="date" name="fname" style="margin-left: 20px;" required><br><br>
+              <label for="purpose">Purpose of Visit:</label><br>
+              <input type="text" id="purpose" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="stay">Place of Stay:</label><br>
+              <input type="text" id="stay" name="fname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br><br><br>
+              <label for="place">Place of Visit:</label><br>
+              <input type="text" id="place" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="function">Function Places:</label><br>
+              <input type="text" id="function" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="type">Type of Function:</label><br>
+              <input type="text" id="type" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br><br><br>
+
+
+            </div>
+            <div class="col-sm-6" style="text-align: left;padding-left: 150px;">
+
+              <label for="airport">Airport Details:</label><br>
+              <label for="a_from">From:</label><br>
+              <input type="text" id="a_from" name="fname" pattern="[A-Za-z]+" style="margin-left: 20px;"><br>
+              <label for="a_to">To:</label><br>
+              <input type="text" id="a_to" name="fname" pattern="[A-Za-z]+" style="margin-left: 20px;"><br><br>
+
+              <label for="helipad">Helipad Details:</label><br>
+              <label for="h_from">From:</label><br>
+              <input type="text" id="h_from" name="fname" pattern="[A-Za-z]+" style="margin-left: 20px;"><br>
+              <label for="h_to">To:</label><br>
+              <input type="text" id="h_to" name="fname" pattern="[A-Za-z]+" style="margin-left: 20px;"><br><br>
+
+              <label for="des">BR Car :</label><br>
+              <input type="radio" id="br" name="lname" value="Yes" style="margin-left: 20px;">Yes
+
+              <!--<label for="des">If not Provided:</label><br>-->
+              <input type="radio" id="br_pro" name="lname" value="No" style="margin-left: 20px;">No<br>
+
+              <input type="text" id="br_reason" name="lname" style="margin-left: 25px;display: none;"><br><br>
+
+
+              <script>
+                $(document).ready(function () {
+                  $("input[type='radio']").change(function () {
+                    if ($(this).attr('id') == "br_pro") {
+                      $("#br_reason").show();
+                    }
+                    else if ($(this).attr('id') == "br") {
+                      $("#br_reason").hide();
+                    }
+                    else if ($(this).attr('id') == "pso") {
+                      $("#pso_reason").hide();
+                    }
+                    else if ($(this).attr('id') == "pso_pro") {
+                      $("#pso_reason").show();
+                    }
+                    $(this).prop('checked', true);
+                  });
+                });
+              </script>
+
+
+              <label for="des">PSO:</label><br>
+              <input type="radio" id="pso" name="llname" value="Yes" style="margin-left: 20px;">Yes
+
+
+              <input type="radio" id="pso_pro" name="llname" value="no" style="margin-left: 20px;">No<br><br>
+
+              <input type="text" id="pso_reason" name="lname" style="margin-left: 20px;display:none"><br><br>
+
+
+
+              <label for="scale">NSG/CRPF/CISF:</label><br>
+              <input type="text" id="typeofforce" name="lname" style="margin-left: 20px;" required><br><br><br><br>
+
+
+            </div>
+          </div>
+          <label for="remark">Remarks</label>
+          <textarea name="message" id="remarks" rows="8" columns="10" style="margin-left: 10px;"
+            required></textarea><br><br><br><br>
+
+          <label for="scale">Attach DSR:</label>
+          <!--<input type="text" id="dsr" name="lname"><br>-->
+          <input type="file" id="fileToUpload" required><br>
+          <input class="btn btn-success" type="submit" value="Submit" data-toggle="modal">
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document" style="color:black">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                The form has been submitted Successfully!!!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cof" class="tabcontent">
+        <h3>Code of Provisions</h3>
+        <p>See the list</p>
+      </div>
+
+      <div id="noc" class="tabcontent">
+
+        <button class="btn btn-primary" onclick="openCity(event, 'noc_1')">NOC</button>
+        <button class="btn btn-success" onclick="openCity(event, 'noc_q')">NOC QUERIES</button>
+
+      </div>
+      <script>
+        document.getElementById('uploadform').addEventListener('submit', formSubmit);
+
+        function formSubmit(e) {
+          e.preventDefault();
+          let name = document.querySelector('#name').value.toUpperCase();
+          let des = document.querySelector('#des').value.toUpperCase();
+          let scale = document.querySelector('#scale7').value.toUpperCase();
+          let date = document.querySelector('#date').value.toUpperCase();
+          let purpose = document.querySelector('#purpose').value.toUpperCase();
+          let stay = document.querySelector('#stay').value.toUpperCase();
+          let place = document.querySelector('#place').value.toUpperCase();
+          let functio = document.querySelector('#function').value.toUpperCase();
+          let type = document.querySelector('#type').value.toUpperCase();
+          let a_from = document.querySelector('#a_from').value.toUpperCase();
+          let a_to = document.querySelector('#a_to').value.toUpperCase();
+          let h_from = document.querySelector('#h_from').value.toUpperCase();
+          let h_to = document.querySelector('#h_to').value.toUpperCase();
+          let br = document.querySelector('#br').checked;
+          let br_reason = document.querySelector('#br_reason').value.toUpperCase();
+          let pso = document.querySelector('#pso').checked;
+          let pso_reason = document.querySelector('#pso_reason').value.toUpperCase();
+          let typeofforce = document.querySelector('#typeofforce').value.toUpperCase();
+          let remarks = document.querySelector('#remarks').value.toUpperCase();
+          var file = document.querySelector("#fileToUpload").files[0];
+          const metadata = { contentType: file.type };
+          storage.ref().child('vipmovement/' + uuidv4()).put(file, metadata).then(function (snapshot) {
+            snapshot.ref.getDownloadURL().then(function (url) {
+              database.ref('vipmovement').push({
+                name: name, des: des, scale: scale, date: date, purpose: purpose, stay: stay, place: place, function: functio
+                , type: type, a_from: a_from, a_to: a_to, h_from: h_from, h_to: h_to, br: br, br_reason: br_reason, pso: pso, pso_reason: pso_reason
+                , typeofforce: typeofforce, remarks: remarks, link: url
+              }).then(qw => {
+                $('#exampleModal').modal('show');
+                document.getElementById('uploadform').reset();
+              });
+            });
+
+          });
+
+          console.log(name);
+
+        }
+        function uuidv4() {
+          return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+          });
+        }
+      </script>
+
+      <div id="noc_q" class="tabcontent">
+        <h3>NOC</h3>
+        <form action="" method="POST" id="nocqueryform">
+          <label for="scale"></label><br>
+          <input type="text" id="noc_search" name="lname" style="margin-left: 20px;"><br><br><br><br>
+
+          <div class="row" style="margin-left: 40px;">
+            <div class="col-sm-6" style="text-align: left;">
+              <input type="checkbox" id="noc_refno" name="vehicle1">
+              <label for="ref_no">NOC REFERECE NO</label><br><br>
+              <input type="checkbox" id="noc_origin" name="vehicle2">
+              <label for="origin"> NOC ORIGIN DEPT</label><br><br>
+              <input type="checkbox" id="noc_name" name="vehicle3">
+              <label for="name">APPLICANT NAME</label><br><br>
+              <input type="checkbox" id="noc_des" name="vehicle1">
+              <label for="des">DESIGNATION</label><br><br>
+              <input type="checkbox" id="noc_country" name="vehicle2">
+              <label for="country">PROPOSED COUNTRY</label><br><br>
+
+
+            </div>
+            <div class="col-sm-6" style="text-align: left;padding-left: 160px;">
+              <input type="checkbox" id="noc_purpose" name="vehicle3">
+              <label for="purpose">PURPOSE</label><br><br>
+              <input type="checkbox" id="noc_duration" name="vehicle3">
+              <label for="duration">DURATION</label><br><br>
+              <input type="checkbox" id="noc_action" name="vehicle3">
+              <label for="action">DEPT ACTION IF ANY</label><br><br>
+              <input type="checkbox" id="noc_date" name="vehicle3">
+              <label for="date">DATE OF NOC</label><br><br>
+              <input type="checkbox" id="noc_reason" name="vehicle3">
+              <label for="reason">REASON</label><br><br>
+            </div>
+
+          </div>
+          <input class="btn btn-success" type="submit" value="Submit">
+        </form>
+
+      </div>
+      <script>
+        //
+        document.getElementById('nocqueryform').addEventListener('submit', formnocdata);
+
+        function formnocdata(e) {
+          try {
+            var removeTab = document.getElementById('querynocresult');
+            var parentEl = removeTab.parentElement;
+            parentEl.innerHTML = "";
+          } catch (err) {
+
+          }
+          e.preventDefault();
+          let name = document.querySelector('#noc_refno').checked;
+          let origin = document.querySelector('#noc_origin').checked;
+          let designation = document.querySelector('#noc_name').checked;
+          let scale = document.querySelector('#noc_des').checked;
+          let date = document.querySelector('#noc_country').checked;
+          let placeofstay = document.querySelector('#noc_purpose').checked;
+          let placeofvisit = document.querySelector('#noc_duration').checked;
+          let functio = document.querySelector('#noc_action').checked;
+          let purpose = document.querySelector('#noc_date').checked;
+          let airport = document.querySelector('#noc_reason').checked;
+          let value = document.querySelector('#noc_search').value;
+          let query;
+          if (name) {
+            query = database.ref('noc').orderByChild("refno").equalTo(value);
+          }
+          else if (designation) {
+            query = database.ref('noc').orderByChild("name").equalTo(value);
+          }
+          else if (scale) {
+            query = database.ref('noc').orderByChild("des").equalTo(value);
+          }
+          else if (date) {
+            query = database.ref('noc').orderByChild("country").equalTo(value);
+          }
+          else if (placeofstay) {
+            query = database.ref('noc').orderByChild("purpose").equalTo(value);
+          }
+          else if (placeofvisit) {
+            query = database.ref('noc').orderByChild("days").equalTo(value);
+          }
+          else if (functio) {
+            query = database.ref('noc').orderByChild("deptaction").equalTo(value);
+          }
+          else if (purpose) {
+            query = database.ref('noc').orderByChild("date").equalTo(value);
+          }
+          else if (airport) {
+            query = database.ref('noc').orderByChild("reason").equalTo(value);
+          }
+          else {
+            query = database.ref('noc');
+          }
+          var fragment = document.getElementById("noc_q");
+          var animalsArray = ["NOC Reference No", " Origin NOC Dept", "Applicant name", "Designation", "Proposed Country", "Purpose", "Duration",
+            "Passport No", "Dept Action if Any", "Service Particulars", "Date of NOC", "NOC Status", "If returned reason", "Frequency of NOC"];
+          var table = document.createElement("table");
+          table.id = "querynocresult";
+          table.style.marginTop = "50px";
+          var thead = document.createElement("thead");
+          var tr = document.createElement("tr");
+          for (var i = 0; i < animalsArray.length; i++) {
+
+            var td = document.createElement("th");
+            td.style.border = "1px solid black";
+            td.textContent = animalsArray[i];
+
+            tr.appendChild(td);
+
+          }
+          thead.appendChild(tr);
+          table.appendChild(thead);
+          fragment.appendChild(table);
+          document.body.appendChild(fragment);
+          query.once('value')
+            .then(function (dataSnapshot) {
+              var tbody = document.createElement("tbody");
+              dataSnapshot.forEach(function (child) {
+                tr = document.createElement("tr");
+                var value = child.val();
+                var td = document.createElement("td");
+                td.textContent = value.refno;
+                td.style.border = "1px solid black";
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.origin;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.name;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.des;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.country;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.purpose;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.days;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.passport;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.deptaction;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.serviceparticular;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.date;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.approval;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.reason;
+                tr.append(td);
+                td = document.createElement("td");
+                td.style.border = "1px solid black";
+                td.textContent = value.frequency;
+                tr.append(td);
+                td = document.createElement("button");
+                td.style.border = "1px solid black";
+                td.textContent = "Delete";
+                td.addEventListener("click", function () {
+                  database.ref('noc').child(child.key).remove();
+                  formnocdata();
+                });
+                tr.append(td);
+
+                tbody.appendChild(tr);
+              });
+              table.style.border = "1px solid black";
+              table.appendChild(tbody);
+              $(document).ready(function () {
+                // Setup - add a text input to each footer cell
+                $('#querynocresult thead th').each(function () {
+                  var title = $('#querynocresult thead th').eq($(this).index()).text();
+                  $(this).append('<input type=text placeholder=' + title + ' >');
+                });
+
+                // DataTable
+                var table = $('#querynocresult').DataTable({
+                  dom: 'Bfrtip',
+                  buttons: [
+                    {
+                      extend: 'print',
+                      text: 'Print selected',
+                      exportOptions: {
+                        columns: ':visible'
+                      }
+                    },
+                    'colvis'
+                  ],
+                  columnDefs: [{
+                    targets: -1,
+                    visible: false
+                  }],
+                  select: true
+                });
+
+                // Apply the search
+                table.columns().eq(0).each(function (colIdx) {
+                  $('input', table.column(colIdx).header()).on('keyup change', function () {
+                    table
+                      .column(colIdx)
+                      .search(this.value)
+                      .draw();
+                  });
+                });
+              });
+
+            });
+        }
+
+//
+      </script>
+      <style>
+        .close {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          right: 0%;
+          padding: 12px 16px;
+          transform: translate(0%, -50%);
+        }
+
+        .close:hover {
+          background: #bbb;
+        }
+      </style>
+      <div id="noc_1" class="tabcontent">
+        <!--<nav aria-label="breadcrumb" style="background-color:black">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>-->
+        <h3>NOC</h3>
+        <form action="" method="POST" id="nocform">
+          <div class="row" style="margin-left: 40px;">
+            <div class="col-sm-6" style="text-align: left;">
+
+              <label for="no">NOC REFERENCE NO:</label><br>
+              <input type="text" id="nocu_refno" name="fname" pattern="[A-Za-z0-9]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="origin">NOC ORIGIN DEPT :</label><br>
+              <input type="text" id="nocu_origin" name="lname" pattern="[A-Za-z0-9]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="name">APPLICANT NAME:</label><br>
+              <input type="text" id="nocu_name" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="des">DESIGNATION:</label><br>
+              <input type="text" id="nocu_des" name="fname" pattern="[A-Za-z]+" style="margin-left: 20px;"
+                required><br><br><br><br>
+              <label for="country">PROPOSED COUNTRY:</label><br>
+              <input type="text" id="nocu_country" name="lname" pattern="[A-Za-z0-9]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="purpose">PURPOSE:</label><br>
+              <input type="text" id="nocu_purpose" name="fname" pattern="[A-Za-z0-9 ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="days">Duration:</label><br>
+              <input type="text" id="nocu_days" name="lname" pattern="[A-Za-z0-9 ]+" style="margin-left: 20px;"
+                required><br><br>
+            </div>
+            <div class="col-sm-6" style="text-align: left;padding-left: 150px;">
+
+              <label for="pass_no">PASSPORT NO:</label><br>
+              <input type="text" id="nocu_passno" name="fname" pattern="[A-Za-z0-9]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="action">DEPT ACTION IF ANY :</label><br>
+              <input type="text" id="nocu_action" name="lname" pattern="[A-Za-z ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="service">SERVICE PARTICULARS:</label><br>
+              <input type="text" id="nocu_service" name="lname" pattern="[A-Za-z0-9 ]+" style="margin-left: 20px;"
+                required><br><br>
+              <label for="date">DATE OF NOC:</label><br>
+              <input type="date" id="nocu_date" name="fname" style="margin-left: 20px;" required><br><br><br><br>
+              <label for="purpose">NOC ISSUED/RETURNED:</label><br>
+              <select name="con" id="nocu_approved" style="margin-left: 20px;" required>
+                <option value="issue">ISSUED:</option>
+                <option value="return">RETURNED:</option>
+
+              </select><br><br>
+              <label for="reason">If Returned Reason:</label>
+              <input type="text" id="nocu_reason" name="fname" style="margin-left: 20px;"><br><br>
+              <label for="fre">FREQUENCY OF NOC:</label>
+              <input type="text" id="nocu_fre" name="lname" pattern="[A-Za-z0-9 ]+" style="margin-left: 20px;"
+                required><br><br>
+
+
+            </div>
+
+          </div>
+          <input class="btn btn-success" type="submit" value="Submit" data-toggle="modal">
+        </form>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+
+              <div class="modal-body" style="color:black">
+                <p>The form has been submitted successfully</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById('nocform').addEventListener('submit', formnocSubmit);
+
+        function formnocSubmit(e) {
+          e.preventDefault();
+          let refno = document.querySelector('#nocu_refno').value.toUpperCase();
+          let origin = document.querySelector('#nocu_origin').value.toUpperCase();
+          let name = document.querySelector('#nocu_name').value.toUpperCase();
+          let des = document.querySelector('#nocu_des').value.toUpperCase();
+          let country = document.querySelector('#nocu_country').value.toUpperCase();
+          let purpose = document.querySelector('#nocu_purpose').value.toUpperCase();
+          let days = document.querySelector('#nocu_days').value.toUpperCase();
+          let passport = document.querySelector('#nocu_passno').value.toUpperCase();
+          let deptaction = document.querySelector('#nocu_action').value.toUpperCase();
+          let serviceparticular = document.querySelector('#nocu_service').value.toUpperCase();
+          let date = document.querySelector('#nocu_date').value.toUpperCase();
+          let approval = document.querySelector('#nocu_approved').value.toUpperCase();
+          let reason = document.querySelector('#nocu_reason').value.toUpperCase();
+          let frequency = document.querySelector('#nocu_fre').value.toUpperCase();
+          database.ref('noc').push({
+            refno: refno, origin: origin, name: name, des: des, country: country, purpose: purpose, days: days, passport: passport, deptaction: deptaction,
+            serviceparticular: serviceparticular, date: date, approval: approval, reason: reason, frequency: frequency
+          }).then(qw => {
+            $('#exampleModalLong').modal('show');
+            document.getElementById('nocform').reset();
+          });
+        } 
+      </script>
+      <div id="queries" class="tabcontent">
+        <h3>QUERIES</h3>
+        <form action="" method="POST" id="queryform">
+          <label for="scale"></label><br>
+          <input type="text" id="query_search" name="lname" style="margin-left: 20px;"><br><br><br><br>
+
+          <div class="row" style="margin-left: 70px;">
+            <div class="col-sm-6" style="text-align: left;">
+              <input type="checkbox" id="ref_name" name="vehicle1">
+              <label for="name">NAME OF VIP</label><br><br>
+              <input type="checkbox" id="ref_des" name="vehicle2">
+              <label for="origin"> DESIGNATION</label><br><br>
+              <input type="checkbox" id="ref_scale" name="vehicle3">
+              <label for="name">SCALE OF SECURITY</label><br><br>
+              <input type="checkbox" id="ref_date" name="vehicle1">
+              <label for="des">DATE OF VISIT</label><br><br>
+              <input type="checkbox" id="ref_placeofstay" name="vehicle2">
+              <label for="country">PLACE OF STAY</label><br><br>
+              <input type="checkbox" id="ref_placeofvisit" name="vehicle3">
+              <label for="name">PLACE OF VISIT</label><br><br>
+              <input type="checkbox" id="ref_functionplace" name="vehicle1">
+              <label for="des">FUNCTION PLACE</label><br><br>
+              <input type="checkbox" id="ref_purpose" name="vehicle2">
+              <label for="country">TYPE OF FUNCTION</label><br><br>
+
+            </div>
+            <div class="col-sm-6" style="text-align: left;padding-left: 160px;">
+              <input type="checkbox" id="ref_airport" name="vehicle3">
+              <label for="purpose">AIRPORT</label><br><br>
+              <input type="checkbox" id="ref_helipad" name="vehicle3">
+              <label for="duration">HELIPAD</label><br><br>
+              <input type="checkbox" id="ref_car" name="vehicle3">
+              <label for="action">BR CAR</label><br><br>
+              <input type="checkbox" id="ref_pso" name="vehicle3">
+              <label for="date">PSO</label><br><br>
+              <input type="checkbox" id="ref_typeofforce" name="vehicle3">
+              <label for="reason">NSG/CRPF/CISF</label><br><br>
+              <input type="checkbox" id="ref_remarks" name="vehicle3">
+              <label for="date">REMARKS</label><br><br>
+              <input type="checkbox" id="ref_dsr" name="vehicle3">
+              <label for="reason">DSR</label><br><br>
+            </div>
+
+          </div>
+          <input class="btn btn-success" type="submit" value="Submit">
+        </form>
+
+        <script>
+
+          document.getElementById('queryform').addEventListener('submit', formSubmit);
+          function formSubmit(e) {
+            try {
+              var removeTab = document.getElementById('queryresult');
+              var parentEl = removeTab.parentElement;
+              parentEl.innerHTML = "";
+            } catch (err) {
+
+            }
+            e.preventDefault();
+            let name = document.querySelector('#ref_name').checked;
+            let value = document.querySelector('#query_search').value.toUpperCase();
+            let designation = document.querySelector('#ref_des').checked;
+            let scale = document.querySelector('#ref_scale').checked;
+            let date = document.querySelector('#ref_date').checked;
+            let placeofstay = document.querySelector('#ref_placeofstay').checked;
+            let placeofvisit = document.querySelector('#ref_placeofvisit').checked;
+            let functio = document.querySelector('#ref_functionplace').checked;
+            let purpose = document.querySelector('#ref_purpose').checked;
+            let airport = document.querySelector('#ref_airport').checked;
+            let helipad = document.querySelector('#ref_helipad').checked;
+            let brcar = document.querySelector('#ref_car').checked;
+            let pso = document.querySelector('#ref_pso').checked;
+            let typeofforce = document.querySelector('#ref_typeofforce').checked;
+            let remarks = document.querySelector('#ref_remarks').checked;
+            let dsr = document.querySelector('#ref_dsr').checked;
+            let query;
+            if (name) {
+              query = database.ref('vipmovement').orderByChild("name").equalTo(value);
+            }
+            else if (designation) {
+              query = database.ref('vipmovement').orderByChild("des").equalTo(value);
+            }
+            else if (scale) {
+              query = database.ref('vipmovement').orderByChild("scale").equalTo(value);
+            }
+            else if (date) {
+              query = database.ref('vipmovement').orderByChild("date").equalTo(value);
+            }
+            else if (placeofstay) {
+              query = database.ref('vipmovement').orderByChild("stay").equalTo(value);
+            }
+            else if (placeofvisit) {
+              query = database.ref('vipmovement').orderByChild("place").equalTo(value);
+            }
+            else if (functio) {
+              query = database.ref('vipmovement').orderByChild("function").equalTo(value);
+            }
+            else if (purpose) {
+              query = database.ref('vipmovement').orderByChild("purpose").equalTo(value);
+            }
+            else if (airport) {
+              query = database.ref('vipmovement').orderByChild("a_from").equalTo(value);
+            }
+            else if (helipad) {
+              query = database.ref('vipmovement').orderByChild("h_from").equalTo(value);
+            }
+            else if (brcar) {
+              query = database.ref('vipmovement').orderByChild("br").equalTo(value);
+            }
+            else if (pso) {
+              query = database.ref('vipmovement').orderByChild("pso").equalTo(value);
+            }
+            else if (typeofforce) {
+              query = database.ref('vipmovement').orderByChild("typeofforce").equalTo(value);
+            }
+            else if (remarks) {
+              query = database.ref('vipmovement').orderByChild("remarks").equalTo(value);
+            }
+            else if (dsr) {
+              query = database.ref('vipmovement').orderByChild("dsr").equalTo(value);
+            }
+            else {
+              query = database.ref('vipmovement');
+            }
+            var fragment = document.getElementById("queries");
+            var animalsArray = ["Name of Vip", "Designation", "Scale of Security", "Date", "Purpose of Visit", "Place of Stay", "Place of Visit",
+              "Function Places", "Types of Functions", "Airport From", "Airport To", "Helipad From", "Helipad To", "BR Car",
+              "Reason", "PSO Car", "Reason", "NSG/CRPF/CISF", "Remarks", "DSR"];
+            var table = document.createElement("table");
+            table.id = "queryresult";
+            table.style.marginTop = "50px";
+            var thead = document.createElement("thead");
+            var tr = document.createElement("tr");
+            for (var i = 0; i < animalsArray.length; i++) {
+
+              var td = document.createElement("th");
+              td.style.border = "1px solid black";
+              td.textContent = animalsArray[i];
+
+              tr.appendChild(td);
+
+            }
+            thead.appendChild(tr);
+            table.appendChild(thead);
+            fragment.appendChild(table);
+            document.body.appendChild(fragment);
+            query.once('value')
+              .then(function (dataSnapshot) {
+                var tbody = document.createElement("tbody");
+                dataSnapshot.forEach(function (child) {
+                  tr = document.createElement("tr");
+                  var value = child.val();
+                  var td = document.createElement("td");
+                  td.textContent = value.name;
+                  td.style.border = "1px solid black";
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.des;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.scale;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.date;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.purpose;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.stay;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.place;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.function;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.type;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.a_from;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.a_to;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.h_from;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.h_to;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.br;
+                  tr.append(td);
+                  /*td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.br_pro;
+                  tr.append(td);*/
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.br_reason;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.pso;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  /*td.style.border = "1px solid black";
+                  td.textContent = value.pso_pro;
+                  tr.append(td);*/
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.pso_reason;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.typeofforce;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.remarks;
+                  tr.append(td);
+                  td = document.createElement("td");
+                  td.style.border = "1px solid black";
+                  td.textContent = value.dsr;
+                  tr.append(td);
+                  //
+                  td = document.createElement("a");
+                  td.style.border = "1px solid black";
+                  var link = document.createTextNode("This is link");
+                  td.appendChild(link);
+                  td.title = "Link";
+                  td.target = "_blank";
+                  td.href = value.link;
+                  tr.append(td);
+                  //
+                  td = document.createElement("button");
+                  td.style.border = "1px solid black";
+                  td.textContent = "Delete";
+                  td.addEventListener("click", function () {
+                    database.ref('vipmovement').child(child.key).remove();
+                    formSubmit();
+                  });
+                  tr.append(td);
+                  tbody.appendChild(tr);
+                });
+                table.style.border = "1px solid black";
+                table.appendChild(tbody);
+                $(document).ready(function () {
+                  // Setup - add a text input to each footer cell
+                  $('#queryresult thead th').each(function () {
+                    var title = $('#queryresult thead th').eq($(this).index()).text();
+                    $(this).append('<input type=text placeholder=' + title + ' >');
+                  });
+
+                  // DataTable
+                  var table = $('#queryresult').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                      {
+                        extend: 'print',
+                        text: 'Print selected',
+                        exportOptions: {
+                          columns: ':visible'
+                        }
+                      },
+                      'colvis'
+                    ],
+                    columnDefs: [{
+                      targets: -1,
+                      visible: false
+                    }],
+                    select: true
+                  });
+
+                  // Apply the search
+                  table.columns().eq(0).each(function (colIdx) {
+                    $('input', table.column(colIdx).header()).on('keyup change', function () {
+                      table
+                        .column(colIdx)
+                        .search(this.value)
+                        .draw();
+                    });
+                  });
+                });
+
+              });
+
+          }
+        </script>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        var x = document.getElementsByClassName("homee");
+        tabcontent = document.getElementsByClassName("tabcontent");
+        homee = document.getElementsByClassName("homee");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].style.display = "block";
+
+
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+
+      }
+    </script>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBkcjzoaS4oCj4eK_N-o61eMwNsC9fSHR0",
+    authDomain: "cbcid-baa92.firebaseapp.com",
+    databaseURL: "https://cbcid-baa92.firebaseio.com",
+    projectId: "cbcid-baa92",
+    storageBucket: "cbcid-baa92.appspot.com",
+    messagingSenderId: "715309161260",
+    appId: "1:715309161260:web:086c5f376d8a8df1626a89",
+    measurementId: "G-5KK7CRXE0F"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const database = firebase.database();
+  const storage = firebase.storage();
+</script>
+
+</html>
